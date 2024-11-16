@@ -1,0 +1,22 @@
+/* src/components/WhatsAppButton.css */
+
+.whatsapp-button {
+  position: fixed; /* يجعل الزر ثابت في المكان الذي نحدده */
+  bottom: 20px; /* المسافة من الأسفل */
+  right: 20px; /* المسافة من اليمين */
+  background-color: #25d366; /* اللون الرسمي لواتساب */
+  color: white; /* اللون الأبيض للأيقونة */
+  padding: 15px; /* حواف الزر */
+  border-radius: 50%; /* جعل الزر دائري الشكل */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل للزر */
+  transition: background-color 0.3s ease; /* تأثير التغيير عند المرور على الزر */
+  z-index: 1000; /* لضمان ظهور الزر فوق المحتوى */
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* تغيير اللون عند المرور عليه */
+}
+
+.whatsapp-button i {
+  margin-right: 10px; /* مسافة بين الأيقونة والنص */
+}

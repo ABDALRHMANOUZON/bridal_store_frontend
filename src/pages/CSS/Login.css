@@ -1,0 +1,145 @@
+/* Login.css */
+
+/* الحاوية الرئيسية لصفحة تسجيل الدخول */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* لضبط ارتفاع الصفحة بالكامل */
+  background-color: #f8f8f8; /* لون خلفية فاتح */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333; /* لون داكن للنص */
+  margin-bottom: 20px;
+}
+
+/* الحقل الذي يحتوي على نموذج التسجيل */
+.loginsignup-fields {
+  background-color: #ffffff; /* لون الخلفية للفورم */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  width: 300px; /* عرض ثابت للفورم */
+}
+
+/* الحقول داخل النموذج */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #666; /* لون رمادي للنص */
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px; /* مسافة بين الحقول */
+  border: 1px solid #ccc; /* حدود خفيفة */
+  border-radius: 4px; /* زوايا دائرية */
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #007bff; /* لون الحدود عند التركيز */
+  outline: none; /* إزالة الحدود الافتراضية */
+}
+
+/* زر التسجيل أو تسجيل الدخول */
+button {
+  padding: 10px;
+  background-color: #007bff; /* لون خلفية الزر */
+  color: white; /* لون النص */
+  border: none;
+  border-radius: 4px; /* زوايا دائرية */
+  font-size: 1rem;
+  cursor: pointer; /* تغيير المؤشر عند المرور */
+  transition: background-color 0.3s; /* تأثير التغيير السلس */
+}
+
+button:hover {
+  background-color: #0056b3; /* لون أغمق عند المرور */
+}
+
+/* رسالة التحذير أو الخطأ */
+.loginsignup-message {
+  margin-top: 15px;
+  color: #ff0000; /* لون أحمر للرسائل */
+}
+
+/* الرابط المخصص لإنشاء حساب جديد */
+.signup-link {
+  margin-top: 20px; /* مسافة أعلى الرابط */
+  color: #007bff; /* لون الرابط */
+}
+
+.signup-link a {
+  text-decoration: underline; /* إضافة خط تحت الرابط */
+}
+
+/* Media Queries لتحسين التجربة على الشاشات الصغيرة */
+
+/* للأجهزة التي عرضها أقل من 768px */
+@media (max-width: 768px) {
+  .loginsignup-fields {
+    width: 80%; /* عرض النموذج يتناسب مع الشاشة */
+    padding: 20px; /* تقليل الحشوات قليلاً */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* تقليل حجم العنوان على الشاشات الصغيرة */
+    margin-bottom: 15px; /* تقليل المسافة أسفل العنوان */
+  }
+
+  input {
+    font-size: 0.9rem; /* تقليل حجم الخط في الحقول */
+  }
+
+  button {
+    padding: 8px; /* تقليل حجم الزر قليلاً */
+    font-size: 0.9rem; /* تقليل حجم الخط في الزر */
+  }
+
+  .loginsignup-message {
+    font-size: 1rem; /* تقليل حجم النص في الرسالة */
+  }
+
+  .signup-link {
+    font-size: 0.9rem; /* تقليل حجم النص في الرابط */
+  }
+}
+
+/* للأجهزة التي عرضها أقل من 480px */
+@media (max-width: 480px) {
+  .loginsignup-fields {
+    width: 90%; /* جعل عرض النموذج أكثر مرونة ليشغل عرض أكبر من الشاشة */
+    padding: 15px; /* تقليل الحشوات */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* تقليل حجم العنوان أكثر */
+    margin-bottom: 10px; /* تقليل المسافة أسفل العنوان */
+  }
+
+  input {
+    font-size: 0.9rem; /* تقليل حجم الخط في الحقول */
+  }
+
+  button {
+    padding: 7px; /* تقليل حجم الزر أكثر */
+    font-size: 0.9rem; /* تقليل حجم الخط في الزر */
+  }
+
+  .loginsignup-message {
+    font-size: 0.9rem; /* تقليل حجم النص في الرسالة */
+  }
+
+  .signup-link {
+    font-size: 0.9rem; /* تقليل حجم النص في الرابط */
+  }
+}

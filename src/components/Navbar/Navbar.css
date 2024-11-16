@@ -1,0 +1,105 @@
+/* Navbar CSS */
+.Navbar {
+  height: auto; /* تعديل ارتفاع الشريط */
+  background-color: #2a2a2a; /* لون موحد */
+  color: white; /* لون النص */
+  font-family: "Arial", sans-serif; /* إضافة الخط المناسب */
+}
+
+.Navbar ul {
+  list-style: none; /* إزالة النقاط من القائمة */
+}
+
+.Navbar li {
+  position: relative; /* لضبط القائمة المنسدلة */
+}
+
+.Navbar .group:hover .group-hover\:block {
+  display: block; /* جعل القائمة تظهر فورًا عند التمرير */
+}
+
+/* إضافة تأثير التأخير للقائمة المنسدلة */
+.Navbar .group:hover .group-hover\:block {
+  opacity: 1; /* جعلها مرئية */
+  transition: opacity 0.3s ease; /* إضافة تأثير الانتقال */
+}
+
+/* التأكد من أن القائمة تكون مرئية عند المرور عليها */
+.Navbar .group-hover\:block {
+  opacity: 0; /* جعلها غير مرئية بشكل افتراضي */
+  transition: opacity 0.3s ease; /* إضافة تأثير الانتقال */
+}
+
+.Navbar .group:hover .group-hover\:block,
+.Navbar .group-hover\:block:hover {
+  opacity: 1; /* جعلها مرئية عند المرور عليها */
+}
+
+.Navbar a {
+  color: white; /* لون الروابط */
+  font-family: "Arial", sans-serif; /* إضافة الخط المناسب */
+}
+
+.Navbar a:hover {
+  color: #b76e79; /* تغيير اللون إلى اللون الجديد */
+}
+
+/* تغيير اللون الأخضر إلى اللون الجديد في أيقونات السلة، المفضلة، وتسجيل الدخول */
+.Navbar .fas.fa-heart,
+.Navbar .fas.fa-shopping-cart,
+.Navbar .fas.fa-user {
+  color: #b76e79; /* تغيير اللون إلى #B76E79 */
+}
+
+.Navbar .fas.fa-heart:hover,
+.Navbar .fas.fa-shopping-cart:hover,
+.Navbar .fas.fa-user:hover {
+  color: #b76e79; /* تغيير اللون عند المرور */
+}
+
+/* تخصيص لون أزرار اللغة */
+.Navbar button {
+  color: #b76e79; /* اللون الجديد للأزرار */
+  background-color: transparent; /* خلفية شفافة */
+  border: none; /* إزالة الحدود */
+  padding: 8px 16px; /* تحديد الحجم */
+  font-size: 16px; /* تحديد حجم الخط */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+  transition: color 0.3s ease; /* إضافة تأثير التغيير عند المرور */
+  font-family: "Arial", sans-serif; /* إضافة الخط المناسب */
+}
+
+/* إزالة اللون الأخضر عند التمرير */
+.Navbar button:hover {
+  color: #b76e79; /* الحفاظ على نفس اللون عند التمرير */
+  /* لا نقوم بتغيير اللون هنا، ليظل ثابتاً */
+}
+
+/* تخصيص ألوان الأزرار عند التمرير */
+.Navbar button:focus,
+.Navbar button:active {
+  outline: none; /* إزالة الخط المحدد عند النقر */
+  color: #b76e79; /* عند النقر أو التركيز، يتم تطبيق اللون الجديد */
+}
+
+.nav-cart-logo {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.nav-cart-count {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #2a2a2a;
+  font-family: "Arial", sans-serif; /* إضافة الخط المناسب */
+}
+
+.Navbar {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    /* Hide the navbar items on mobile view */
+  }
+}

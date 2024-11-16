@@ -1,0 +1,35 @@
+.item {
+  text-align: center; /* محاذاة النص في منتصف العنصر */
+  margin: 20px; /* فراغ حول كل عنصر */
+}
+
+.zoomable-image {
+  width: 100%; /* عرض الصورة بالكامل */
+  max-width: 300px; /* أقصى عرض للصورة */
+  transition: transform 0.3s ease; /* تأثير سلس عند التكبير */
+  cursor: pointer; /* تغيير المؤشر عند تمرير الفأرة فوق الصورة */
+}
+
+.zoomable-image:hover {
+  transform: scale(1.2); /* تكبير الصورة عند التمرير */
+}
+
+/* تنسيق أزرار التبديل */
+.image-switcher {
+  margin-top: 10px; /* فراغ فوق الأزرار */
+}
+
+.image-switcher button {
+  margin: 0 5px; /* فراغ بين الأزرار */
+  padding: 10px 15px; /* مساحة داخل الأزرار */
+  border: none; /* إزالة حدود الأزرار */
+  background-color: #b76e79; /* تغيير لون خلفية الأزرار إلى اللون الجديد */
+  color: white; /* لون النص */
+  cursor: pointer; /* تغيير المؤشر عند تمرير الفأرة فوق الأزرار */
+  border-radius: 5px; /* زوايا دائرية */
+  transition: background-color 0.3s; /* تأثير عند تغيير لون الخلفية */
+}
+
+.image-switcher button:hover {
+  background-color: #9f4f60; /* تغيير لون خلفية عند تمرير الفأرة إلى درجة أغمق من اللون الجديد */
+}

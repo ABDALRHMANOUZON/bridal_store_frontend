@@ -1,0 +1,198 @@
+/* إضافة خط مخصص من Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* إعدادات الصفحة */
+.favourite-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif; /* استخدام الخط الجديد */
+}
+
+.favourite-page-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 500; /* ضبط سمك الخط */
+}
+
+/* عرض المنتجات */
+.favourite-products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* تصميم العنصر في المفضلة */
+.favourite-product {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif; /* استخدام الخط الجديد */
+}
+
+.favourite-product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.favourite-product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+}
+
+.favourite-product-details {
+  padding: 15px;
+}
+
+.favourite-product-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.favourite-product-description {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.favourite-product-price {
+  font-size: 1.1rem;
+  color: #e74c3c; /* اللون الأحمر */
+  margin-bottom: 15px;
+}
+
+/* زر إزالة من المفضلة */
+.remove-from-favourites-button {
+  padding: 8px 20px;
+  background-color: #b76e79; /* تغيير اللون الأصفر إلى اللون الجديد */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  font-family: "Roboto", sans-serif; /* استخدام الخط الجديد */
+}
+
+.remove-from-favourites-button:hover {
+  background-color: #9f5564; /* درجة داكنة من اللون الجديد */
+}
+
+/* حالة التحميل والخطأ */
+.loading,
+.error {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #b76e79; /* تغيير اللون الأصفر إلى اللون الجديد */
+  font-family: "Roboto", sans-serif; /* استخدام الخط الجديد */
+}
+
+/* ترتيب الصفحة في حالة عدم وجود منتجات مفضلة */
+.favourite-page .no-favourites {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #777;
+  margin-top: 50px;
+}
+
+/* تعديل التنسيق للأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .favourite-page {
+    padding: 10px;
+  }
+
+  .favourite-page-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .favourite-products-list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .favourite-product {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .favourite-product-name {
+    font-size: 1rem;
+  }
+
+  .favourite-product-description {
+    font-size: 0.8rem;
+  }
+
+  .favourite-product-price {
+    font-size: 1rem;
+  }
+
+  .remove-from-favourites-button {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+  }
+
+  .loading,
+  .error {
+    font-size: 1.2rem;
+  }
+
+  .favourite-page .no-favourites {
+    font-size: 1.3rem;
+  }
+}
+
+/* تعديل التنسيق للأجهزة الصغيرة جدًا (الهواتف المحمولة) */
+@media (max-width: 480px) {
+  .favourite-page {
+    padding: 5px;
+  }
+
+  .favourite-page-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .favourite-products-list {
+    grid-template-columns: 1fr; /* عمود واحد فقط في الهواتف */
+    gap: 10px;
+  }
+
+  .favourite-product-name {
+    font-size: 0.9rem;
+  }
+
+  .favourite-product-description {
+    font-size: 0.7rem;
+  }
+
+  .favourite-product-price {
+    font-size: 1rem;
+  }
+
+  .remove-from-favourites-button {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+
+  .loading,
+  .error {
+    font-size: 1rem;
+  }
+
+  .favourite-page .no-favourites {
+    font-size: 1.2rem;
+  }
+}

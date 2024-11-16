@@ -1,0 +1,36 @@
+/* signup.css */
+.signup {
+  @apply flex items-center justify-center min-h-screen bg-gray-100; /* استخدام خصائص Tailwind */
+}
+
+.signup-container {
+  @apply bg-white p-8 rounded-lg shadow-md w-96; /* تصميم الحاوية */
+}
+
+h1 {
+  @apply text-2xl font-semibold text-center text-gray-800 mb-6; /* تصميم العنوان */
+}
+
+.signup-fields {
+  @apply flex flex-col; /* استخدام flex لتوزيع الحقول بشكل عمودي */
+}
+
+input {
+  @apply mb-4 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500; /* تصميم الحقول */
+}
+
+button {
+  @apply bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition; /* تصميم الزر */
+}
+
+.signup-message {
+  @apply text-red-500 text-center mt-4; /* تصميم الرسائل */
+}
+
+.signup-login {
+  @apply text-center mt-4; /* تصميم الرابط */
+}
+
+.signup-login a {
+  @apply text-blue-500 underline; /* تصميم رابط تسجيل الدخول */
+}

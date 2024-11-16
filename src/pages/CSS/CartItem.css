@@ -1,0 +1,140 @@
+/* تنسيق الحاويات */
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* عنوان الصفحة */
+.cart-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* عرض تفاصيل السلة */
+.cart-details {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* الرسالة عند وجود خطأ */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* تفاصيل المجموع الكلي */
+.total-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* تنسيق عناصر السلة */
+.cart-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  color: green;
+}
+
+.product-images {
+  margin-top: 10px;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.product-image:last-child {
+  margin-right: 0;
+}
+
+/* تنسيق كود الخصم */
+.promo-code {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.promo-code input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 70%;
+}
+
+.apply-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
+/* الرسائل الخاصة بكود الخصم */
+.promo-message {
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* زر checkout */
+.checkout {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.checkout-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #218838;
+}
+
+/* الرسائل الخاصة بالـ Checkout */
+.checkout-message {
+  text-align: center;
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 10px;
+}

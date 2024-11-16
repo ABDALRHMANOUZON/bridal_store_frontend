@@ -1,0 +1,176 @@
+/* Footer CSS */
+
+.footer {
+  padding: 10px 20px; /* تقليل الحشوة العلوية والسفلية */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif; /* إضافة نوع خط */
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* تقليل المسافة السفلية */
+}
+
+.footer-logo img {
+  width: 30px; /* تقليل حجم الصورة */
+  height: 30px; /* تقليل حجم الصورة */
+  margin-right: 8px; /* تقليل المسافة بين الصورة والنص */
+}
+
+.footer-logo p {
+  font-size: 20px; /* تقليل حجم الخط */
+  font-weight: bold;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* نوع خط مميز للشعار */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0; /* تقليل المسافة العلوية والسفلية */
+  display: flex;
+  gap: 15px; /* تقليل المسافة بين الروابط */
+}
+
+.footer-links li {
+  font-size: 14px; /* تقليل حجم الخط */
+  cursor: pointer;
+  transition: color 0.3s;
+  font-family: "Arial", sans-serif; /* إضافة نوع خط للرابط */
+}
+
+.footer-links li:hover {
+  color: #b76e79; /* تغيير اللون عند التمرير إلى اللون الجديد */
+}
+
+.footer-social-icon {
+  display: flex;
+  gap: 10px; /* تقليل المسافة بين الأيقونات */
+  margin-bottom: 10px; /* تقليل المسافة السفلية */
+}
+
+.footer-icon-container {
+  width: 25px; /* تقليل حجم الأيقونة */
+  height: 25px; /* تقليل حجم الأيقونة */
+}
+
+.footer-icon-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.footer-icon-container img:hover {
+  transform: scale(1.1);
+}
+
+.footer-cppyright {
+  width: 100%;
+}
+
+.footer-cppyright hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 15px 0; /* تقليل المسافة العلوية والسفلية */
+}
+
+.footer-cppyright p {
+  font-size: 12px; /* تقليل حجم الخط */
+  color: #bbb;
+  font-family: "Arial", sans-serif; /* إضافة نوع خط للمحتوى */
+}
+
+/* Media Queries لتحسين التجربة على الشاشات الصغيرة */
+
+/* الأجهزة ذات العرض أقل من 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 15px; /* زيادة الحشوة قليلاً */
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    margin-bottom: 15px; /* زيادة المسافة أسفل الشعار */
+  }
+
+  .footer-logo img {
+    width: 40px; /* زيادة حجم الشعار قليلاً */
+    height: 40px;
+    margin-bottom: 8px; /* إضافة مسافة أسفل الشعار */
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-links li {
+    font-size: 16px; /* زيادة حجم النصوص قليلاً */
+    margin: 5px 0; /* تقليل المسافة بين العناصر */
+  }
+
+  .footer-social-icon {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-icon-container {
+    width: 30px; /* زيادة حجم الأيقونات قليلاً */
+    height: 30px;
+  }
+
+  .footer-cppyright p {
+    font-size: 14px; /* زيادة حجم النص قليلاً */
+  }
+}
+
+/* الأجهزة ذات العرض أقل من 480px */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px; /* تقليل الحشوة للهواتف الصغيرة */
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px; /* زيادة المسافة أسفل الشعار */
+  }
+
+  .footer-logo img {
+    width: 50px; /* زيادة حجم الشعار بشكل أكبر */
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px; /* تقليل المسافة بين الروابط */
+  }
+
+  .footer-links li {
+    font-size: 14px; /* تقليل حجم النص على الهواتف */
+  }
+
+  .footer-social-icon {
+    flex-direction: column;
+    gap: 8px; /* تقليل المسافة بين الأيقونات */
+  }
+
+  .footer-icon-container {
+    width: 35px; /* زيادة حجم الأيقونات بشكل أكبر */
+    height: 35px;
+  }
+
+  .footer-cppyright p {
+    font-size: 12px; /* تقليل حجم النص في الـ copyright */
+  }
+}

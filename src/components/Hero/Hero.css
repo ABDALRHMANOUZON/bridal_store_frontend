@@ -1,0 +1,42 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* عمودين لصفين */
+  gap: 10px; /* المسافة بين الصور */
+  justify-items: center;
+  padding: 20px;
+  background-color: #2a2a2a; /* لون الخلفية */
+}
+
+.large-image {
+  width: 90%; /* حجم أكبر للصور الكبيرة */
+  height: auto;
+  opacity: 0.8; /* شفافية */
+  grid-column: span 1;
+  grid-row: 1; /* الصف الأول للصور الكبيرة */
+  transition: all 0.3s ease; /* تأثير انتقال */
+}
+
+.small-image {
+  width: 90%; /* حجم أصغر للصور الصغيرة */
+  height: auto;
+  grid-column: span 1;
+  grid-row: 2; /* الصف الثاني للصور الصغيرة */
+  transition: all 0.3s ease; /* تأثير انتقال */
+}
+
+.large-image:hover,
+.small-image:hover {
+  opacity: 1; /* زيادة الوضوح عند التمرير */
+  filter: grayscale(0%) brightness(100%); /* إلغاء التدرج الرمادي وزيادة الإضاءة */
+}
+
+/* إضافة تأثير hover لجميع الصور */
+.large-image,
+.small-image {
+  filter: grayscale(80%) brightness(80%); /* تأثير تدرج الرمادي مع إضاءة منخفضة */
+}
+
+.large-image:hover,
+.small-image:hover {
+  filter: grayscale(0%) brightness(100%); /* إلغاء التدرج الرمادي وزيادة الإضاءة عند التمرير */
+}
